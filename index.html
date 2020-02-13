@@ -20,5 +20,28 @@
         <img ng-src="images/yaakov_{{stateOfBeing}}.png">
       </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBsGsCBHRLdCfkK1cDjJi6FsbEcaYOpNd4",
+        authDomain: "acupunctuuryang.firebaseapp.com",
+        databaseURL: "https://acupunctuuryang.firebaseio.com",
+        projectId: "acupunctuuryang",
+        storageBucket: "acupunctuuryang.appspot.com",
+        messagingSenderId: "754042346223",
+        appId: "1:754042346223:web:adb25c875120b5529b191a",
+        measurementId: "G-N049KJZDKT"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
